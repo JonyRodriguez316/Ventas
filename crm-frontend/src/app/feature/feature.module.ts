@@ -2,27 +2,26 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { FeatureRoutingModule } from './feature-routing.module';
+import { AsesorToolbarComponent } from './asesor/toolbar/asesor-toolbar.component';
+import { PersonaComboboxComponent } from './persona/persona-combobox/persona-combobox.component';
+import { AsesorListComponent } from './asesor/list/asesor-list.component';
+import { AsesorFormComponent } from './asesor/form/asesor-form.component';
 import { FormsModule } from '@angular/forms';
-import { CustomerToolbarComponent } from './customer/toolbar/customer-toolbar.component';
-import { CustomerListComponent } from './customer/list/customer-list.component';
-import { CustomerComponent } from './customer/form/customer.component';
-import { AsesorComboboxComponent } from './asesor/asesor-combobox/asesor-combobox.component';
-import { ProductSearchComponent } from './product/search/product-search.component';
-
-
+import { ClienteSearchComponent } from './cliente/search/cliente-search.component';
 
 @NgModule({
   declarations: [
-    CustomerComponent,
-    CustomerToolbarComponent,
-    CustomerListComponent,
-    AsesorComboboxComponent,
-    ProductSearchComponent
+    AsesorFormComponent,
+    AsesorToolbarComponent,
+    AsesorListComponent,
+    PersonaComboboxComponent,
+    ClienteSearchComponent,
   ],
   imports: [
     CommonModule,
     FeatureRoutingModule,
     FormsModule
-  ]
+
+  ],
 })
-export class FeatureModule { }
+export class FeatureModule {}
