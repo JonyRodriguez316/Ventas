@@ -13,8 +13,10 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     MainComponent,
     HeaderComponent,
     SidebarComponent,
-    DashboardComponent
-  ],
+    SidebarComponent,
+    DashboardComponent,
+    
+    ],
   imports: [
     CommonModule,
     LayoutRoutingModule
